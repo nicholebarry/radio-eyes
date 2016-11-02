@@ -1,5 +1,5 @@
 # radio-eyes
-Code to analysis radio sources
+Code to analyze radio sources
 
 ## Key terms
 
