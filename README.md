@@ -7,6 +7,8 @@ Code to analyze radio sources
 
 **declination**: a celestial (and therefore spherical) coordinate that descibes locations on the sky. Declination traces an arc from the North Celestial pole (+90 degrees) to the South Celestial pole (-90 degrees), or "up" to "down".<br />
 
+**hdu**: Header Data Unit in a fits file <br />
+
 **field of view**: the range in area of the sky that the instrument can see clearly. <br />
 
 **fits files**: Flexible Image Transport System. <br />
