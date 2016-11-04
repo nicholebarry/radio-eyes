@@ -1,0 +1,87 @@
+
+(C:\Users\Teagan\Anaconda3) C:\Users\Teagan>python
+Python 3.5.2 |Anaconda 4.2.0 (64-bit)| (default, Jul  5 2016, 11:41:13) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import astropy
+>>> from astropy.io import fits
+>>> file_name = "C:\Users\Teagan\Desktop\Aug23_high_EoR0
+  File "<stdin>", line 1
+    file_name = "C:\Users\Teagan\Desktop\Aug23_high_EoR0
+                                                       ^
+SyntaxError: EOL while scanning string literal
+>>> file_name = "C:\Users\Teagan\Desktop\Aug23_high_EoR0"
+  File "<stdin>", line 1
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+>>> file_name = "C:\Users\Teagan\Desktop\Aug23_high_EoR0\1061311664_highEoR0.fits"
+  File "<stdin>", line 1
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+>>> file_name = 'C:\Users\Teagan\Desktop\Aug23_high_EoR0\1061311664_highEoR0.fits'
+  File "<stdin>", line 1
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+>>> file_name = r'C:\Users\Teagan\Desktop\Aug23_high_EoR0\1061311664_highEoR0.fits'
+>>> hdu_lift = fits.open(file_name)
+>>> hdu_list = fits.open(file_name)
+>>> hdu_list.info()
+Filename: C:\Users\Teagan\Desktop\Aug23_high_EoR0\1061311664_highEoR0.fits
+No.    Name         Type      Cards   Dimensions   Format
+0    PRIMARY     PrimaryHDU       4   ()
+1                BinTableHDU     26   1R x 4C      [169906J, 169906E, 169906E, 169906E]
+>>> hdu_list(1).header
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'HDUList' object is not callable
+>>> header = hdu_list(1).header
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'HDUList' object is not callable
+>>> header = 'hdu_list(1).header'
+>>> header
+'hdu_list(1).header'
+>>> print(header)
+hdu_list(1).header
+>>> header = hdu_list[1].header
+>>> print(header)
+XTENSION= 'BINTABLE'           /Binary table written by MWRFITS v1.11b          BITPIX  =                    8 /Required value                                  NAXIS   =                    2 /Required value                                  NAXIS1  =              2718496 /Number of bytes per row                         NAXIS2  =                    1 /Number of rows                                  PCOUNT  =                    0 /Normally 0 (no varying arrays)                  GCOUNT  =                    1 /Required value                                  TFIELDS =                    4 /Number of columns in table                      COMMENT                                                                         COMMENT  *** End of mandatory fields ***                                        COMMENT                                                                         COMMENT                                                                         COMMENT  *** Column names ***                                                   COMMENT                                                                         TTYPE1  = 'ID      '           /                                                TTYPE2  = 'DECLINATION'        /                                                TTYPE3  = 'RIGHTASCENSION'     /                                                TTYPE4  = 'FLUXI   '           /                                                COMMENT                                                                         COMMENT  *** Column formats ***                                                 COMMENT                                                                         TFORM1  = '169906J '           /                                                TFORM2  = '169906E '           /                                                TFORM3  = '169906E '           /                                                TFORM4  = '169906E '           /                                                COMMENT    =  Field: EoR0, Date: Aug23,                                         END
+>>> data = hdu_list[1].data
+>>> print(data)
+[ (array([   2,    8,    3, ..., 6001, 3814, 8689]), array([-34.7611618 , -27.46615982, -26.03567123, ..., -33.65958405,
+       -28.24256706, -22.66648483], dtype=float32), array([ 359.25701904,  349.98117065,    6.46027708, ...,  342.13232422,
+        352.03125   ,    9.60213375], dtype=float32), array([ 2.13306856,  1.2754488 ,  1.96209228, ...,  0.0091807 ,
+        0.00225473,  0.00664669], dtype=float32))]
+>>> print(data[0]
+... print(data[0])
+  File "<stdin>", line 2
+    print(data[0])
+        ^
+SyntaxError: invalid syntax
+>>> print(data[0])
+(array([   2,    8,    3, ..., 6001, 3814, 8689]), array([-34.7611618 , -27.46615982, -26.03567123, ..., -33.65958405,
+       -28.24256706, -22.66648483], dtype=float32), array([ 359.25701904,  349.98117065,    6.46027708, ...,  342.13232422,
+        352.03125   ,    9.60213375], dtype=float32), array([ 2.13306856,  1.2754488 ,  1.96209228, ...,  0.0091807 ,
+        0.00225473,  0.00664669], dtype=float32))
+>>> eyed = data[0]
+>>> dec = data[1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\Teagan\Anaconda3\lib\site-packages\astropy\io\fits\fitsrec.py", line 530, in __getitem__
+    raise IndexError("Index out of bounds")
+IndexError: Index out of bounds
+>>> dec = data[0]
+>>> print(data[0])
+(array([   2,    8,    3, ..., 6001, 3814, 8689]), array([-34.7611618 , -27.46615982, -26.03567123, ..., -33.65958405,
+       -28.24256706, -22.66648483], dtype=float32), array([ 359.25701904,  349.98117065,    6.46027708, ...,  342.13232422,
+        352.03125   ,    9.60213375], dtype=float32), array([ 2.13306856,  1.2754488 ,  1.96209228, ...,  0.0091807 ,
+        0.00225473,  0.00664669], dtype=float32))
+>>> print(data[1])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\Teagan\Anaconda3\lib\site-packages\astropy\io\fits\fitsrec.py", line 530, in __getitem__
+    raise IndexError("Index out of bounds")
+IndexError: Index out of bounds
+>>> data = hdu_list[1].data[0]
+>>> eyed = data[0]
+>>> dec = data[1]
+>>> print(data[1])
+[-34.7611618  -27.46615982 -26.03567123 ..., -33.65958405 -28.24256706
+ -22.66648483]
+>>> ra =
