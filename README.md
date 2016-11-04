@@ -1,6 +1,15 @@
 # radio-eyes
 Code to analyze radio sources
 
+**Goals** <br />
+1. Plot EoR0 highband components on a RA/DEC scatter plot. Pixelate and histogram as well? <br />
+2. Recreate Patti's plot of NGC 253. Compare across days for stability. Investigate normalization. <br />
+3. Create plots of a few bright extended sources in EoR0 <br />
+4. Plot EoR0 lowband components and compare extended sources <br />
+5. Plot Fornax from EoR1 highband and lowband <br />
+6. Plot CasA (highband and lowband?) <br />
+7. Cross-correlations <br />
+
 ## Key terms
 
 **components**: little point-like portions of flux. Extended source models can be built using many point-like flux components. <br />
