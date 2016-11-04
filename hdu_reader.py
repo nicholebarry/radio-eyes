@@ -14,7 +14,7 @@ data = hdu_list[1].data
 eyed = data[0]
 #declanation random interger
 dec = data[1]
-
-
-
-
+#right ascension of the component
+ra = data[2]
+#the flux density of the component woooo
+flux = data[3]
