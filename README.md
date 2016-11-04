@@ -38,3 +38,5 @@ Commit the file you have added to prepare for pushing to the remote repository. 
 **push** <br />
 Push the commit to the remote repository. <br />
 `git push` <br />
+
+If at any point you are curious about what is in your version of radio-eyes, you can run the command `git status`.
