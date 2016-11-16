@@ -1,6 +1,13 @@
 # radio-eyes
 Code to analyze radio sources
 
+**Days** <br />
+* Aug23: Field EoR0 (which includes NGC 253) in the high band (182 MHz). There are 94 observations.
+* Aug27: Field EoR0 (which includes NGC 253) in the high band (182 MHz). There are 78 observations.
+* Aug26: Field EoR0 (which includes NGC 253) in the low band (154 MHz). There are 104 observations.
+* Oct23: Field EoR1 (which includes Fornax) in the high band (182 MHz). There are 97 observations.
+* Oct24: Field EoR1 (which includes Fornax) in the low band (154 MHz). Coming soon!
+
 **Goals** <br />
 1. Plot EoR0 highband components on a RA/DEC scatter plot. Pixelate and histogram as well? <br />
 2. Recreate Patti's plot of NGC 253. Compare across days for stability. Investigate normalization. <br />
