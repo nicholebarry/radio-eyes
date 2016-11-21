@@ -9,8 +9,11 @@ Code to analyze radio sources
 * Oct24: Field EoR1 (which includes Fornax) in the low band (154 MHz). There are 101 observations.
 
 **Cool things to look at, listed as ra_zoom, dec_zoom** <br />
-* NGC 253: [11.7,12.1], [-25.45, -25.15]
-* Fornax A: [49.5,52], [-38,-39]
+* NGC 253: [11.7,12.1], [-25.45, -25.15] in EoR0
+* Fornax A: [49.5,52], [-38,-39] in EoR1
+* Faint double-lobed object: [8.9,9.1], [-30.3,-30.5] in EoR0
+* Faint double-lobed with multiple sources nearby: [6.6,7.2], [-30.1, -30.4] in EoR0
+* Bright, compact double-lobed object: [57.6,58.4], [-27.4,-28] in EoR1
 
 **Goals** <br />
 1. Plot EoR0 highband components on a RA/DEC scatter plot. Pixelate and histogram as well? <br />
