@@ -1,6 +1,10 @@
 # radio-eyes
 Code to analyze radio sources
 
+**Fields** <br />
+* EoR0: Really good data within dec=[-10,-40], ra=[340,10] (or ra=[-20,10] with corrected ra)
+* EoR1: Really good data within dec=[-10,-40], ra=[40,75]
+
 **Days** <br />
 * Aug23: Field EoR0 (which includes NGC 253) in the high band (182 MHz). There are 94 observations.
 * Aug27: Field EoR0 (which includes NGC 253) in the high band (182 MHz). There are 78 observations.
