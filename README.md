@@ -20,6 +20,7 @@ Code to analyze radio sources
 * Bright, compact double-lobed object: [57.6,58.4], [-27.4,-28] in EoR1
 * Faint double-lobed object 2: [7.4,7.8], [-33.1,-33.4] in EoR0
 * Asymmetrical faint double-lobed object: [7.7,8],[-32.8,-33.1] in EoR0
+* Faint double-lobed object 3: [5.9,6.1],[-30.25,-30.45] in EoR0
 
 **Goals** <br />
 1. Plot EoR0 highband components on a RA/DEC scatter plot. Pixelate and histogram as well? <br />
