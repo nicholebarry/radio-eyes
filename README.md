@@ -24,7 +24,7 @@ Code to analyze radio sources
   * 1061316296_uniform_Dirty_XX.png: image of the radio sky for the field EoR0 for a two minute observation. This is the image that we get from the instrument. It has point spread functions in it. We use deconvolution to reduce it. <br />
   * 1061316296_uniform_Residual_XX.png: residual (as much flux taken out as possible) image of the radio sky for the field EoR0 for a two minute observation. This is what is leftover after we deconvolve thousands and thousands of times. Edges of the field look worse because we the instrument didn't see it very well. Large-scale ripple is the diffuse synchrotron emission from our own galaxy. <br />
   * MWA_EoR_fields-498 copy.jpg: locations of the EoR0 and EoR1 field on the sky. <br />
-  * mwabackground.png: image of one tile from the MWA. There are 128 tiles. You have to credit <br />
+  * mwabackground.png: image of one tile from the MWA. There are 128 tiles.<br />
   * https://www.flickr.com/photos/icrar/albums/with/72157631041722366 has some more random pictures of the MWA. <br />
 
 **Fields** <br />
