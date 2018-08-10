@@ -7,20 +7,22 @@ from astropy.io import fits
 #***This is from 11/07/16, read in for obsids from Aug 23
 #We have not yet, but plan to build strings that include obsids that point to locations of each fits file
 #to be used to open fits files one by one
-aug23_obsids_file = open('/astro/users/teagao/radio-eyes/Aug23_obsids.txt', 'r')
+aug23_obsids_file = open('/Users/lisa/Documents/internship/radio-eyes/Aug23_obsids.txt', 'r')
 aug23 = [line.split( ) for line in aug23_obsids_file.readlines()]
 
 
 #file name is hardcoded, and in windows DOS
-file_name = r'C:\Users\Teagan\Desktop\Aug23_high_EoR0\1061311664_highEoR0.fits'
+file_name = '/Users/lisa/Documents/internship/radio-eyes/1061311664_highEoR0.fits'
 #header dater unit list- package from astropy to open file
 hdu_list = fits.open(file_name)
+#rough infoof hdu_list
+hdu_list
 #details about hdu.list
 hdu_list.info()
 #call name to read the header to figure out which file
 header = hdu_list[1].header
 #pulls out actual data from hdu
-data = hdu_list[1].data
+data = hdu_list[1].data[0]
 #id random interger
 eyed = data[0]
 #declanation random interger
@@ -51,6 +53,7 @@ plt.ylabel('Declination (degrees)',
            fontweight='bold', size=14)
 #This is hardcoded right now, but we will change that at a later time
 plt.title('Field: EoR0 at Frequency 182 MHz')
+#all these codes in one column to hold on the plot
 #These are commented out right now, but limits are here to be adjusted to see specific parts of the plot
 #This is the location of NGc 253 (probably sculptor galaxy) in degrees
 #plt.xlim([11.75, 12.00])
