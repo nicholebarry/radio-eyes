@@ -70,3 +70,13 @@ Push the commit to the remote repository. <br />
 `git push` <br />
 
 If at any point you are curious about what is in your version of radio-eyes, you can run the command `git status`.
+
+## Terminal commands
+
+**cd**: change directory<br />
+**pwd**: present working directory <br />
+**ls**: list <br />
+**cd \~**: change directory to home <br />
+**mkdir**: make a directory <br />
+**rm**: remove, optional recursive `-r` (goes before the name of the folder you want to remove) <br />
+**git \<command\>**: run a git command <br />
