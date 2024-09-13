@@ -1,6 +1,6 @@
 # radio-eyes
 Code to analyze radio sources
-
+*test
 **Fields** <br />
 * EoR0: Really good data within dec=-10,-40, ra=340,10 (or ra=-20,10 with corrected ra)
 * EoR1: Really good data within dec=-10,-40, ra=40,75
